@@ -49,15 +49,20 @@
             }
             @media screen and (max-width: 500px) {
                 .web-banner{
-                width: 50%;
+                width: 70%;
                 height: auto;
-                
-                margin:0% 25% 0% 25%;
-                
-            }
-            .splash-screen{
-                width: 100%;
-            }
+                align-self: centerz
+                }
+                img{
+                width: 40%;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                height: auto;
+                }
+                .splash-screen{
+                    width: 100%;
+                }
             }
             @media screen and (min-width: 501px) {
                 .web-banner{
@@ -68,43 +73,69 @@
                 float: left;
                 position: sticky;
             }
+            img{
+                width: 40%;
+                height: auto;
+            }
             .splash-screen{
                 width: 70%;
                 
             }
             }
             
+            .padd{
+                height: 30px;
+            }
 
             
         </style>
     </head>
     <body>
-        <!-- <nav>
-            <ul class="w3-bar w3-black">
-                <a href="index.html"><li class="w3-bar-item w3-button">Home</li></a>
+        <nav>
+            <ul class="nav-bar">
+                <a href="index.html"><li class="w3-bar-item w3-button"><img src="images/logo.svg" alt="Sihathu Logo" width="10%" height="auto"></li></a>
                 <a href="features.html"><li class="w3-bar-item w3-button" >Features</li></a>
-                <a href="team.html"><li class="w3-bar-item w3-button" >Team</li></a>
+                <a href="team.html"><li class="w3-bar-item w3-button" >FAQ</li></a>
             </ul> -->
-        <!-- </nav> -->
+        </nav>
         <title>Sihhathu</title>
-        <img src="images/sihhahtu-web-logo.png" alt="Sihhathu App Logo" class="web-banner">
+        <img src="images/logo.svg" alt="Sihhathu App Logo" class="web-banner">
         
-        <img src="images/main-splash-screen.png" alt="Main Splash Screen Phone" class="splash-screen">
-        <p>
-            Sihhathu is an application under the theme of health and well-being, that we have designed to make health care services easier and more user friendly in the Maldives by integrating some basic features into one mobile application. Users will be able to gain access to these features on their smartphones anywhere in the Maldives but some features may require internet access and an additional device.
-        </p>
+        <img src="images/splash-screen.svg" alt="Main Splash Screen Phone" class="splash-screen">
+        <div>
+            <h3>Whatis Sihhahtu?</h3>
+            <p>Sihhathu is an app dedicated to streamlining the medical services provided to the general public of Maldives. We intend to minimize inconveniences in the process of getting medical care in Maldives by addressing issues ranging from minimal ones such as forgetting to take medication on time to major ones such as the inequality in healthcare services across the various islands of Maldives.
+            </p>
+        </div>
 
-        <h2 class="app-features"  >
-            Make Appointments on the go
-        </h2>
-        <p>
-            Sihhathu Lets You Make Appointments On the Go
-        </p>
-        <img src="images/appointment.png" alt="Appointments Image" width="100%">
-        <a href="contacts.html">
-            Contacts
-        </a>
-        
-        
+        <div>
+            <h2 class="features"  >
+                Features
+            </h2>
+            <img src="images/dashboard.svg" alt="dashboard screen">
+            <p>
+                A news feed featuring the real-time information on the current state of Maldivian and International health developments and crises such as news on an outbreak of a particular disease.
+            </p>
+            <br>
+            <p>Keep track of your token numbers in order to minimize the amount of time wasted on doing these things in person</p>
+            <br>
+            <p>A tracking and reminding system for medication based on when and how often the medication is supposed to be used</p>
+            <br>
+        </div>
+        <div>
+                <p>A system to make online appointments and keep track of your current and previous appointments </p>
+                <img src="images/current-appointments.svg" alt="Current Apppointments">    
+        </div>
+        <div class="padd">
+
+        </div>
+        <div>
+            <img src="images/telemedicine-history.svg" alt="Telemedicine History">
+            <p>The ability to consult doctors through telemedicine so that access to healthcare is not limited by geography and patients can be sure that an in-house consultation is necessary before spending money on transportation and accommodation.</p>
+        </div>
+        <div>
+            <p>The ability to consult doctors through telemedicine so that access to healthcare is not limited by geography and patients can be sure that an in-house consultation is necessary before spending money on transportation and accommodation.</p>
+            <img src="images/diagnosis.svg" alt="DIagnosis">
+        </div>
     </body>
 </html>
