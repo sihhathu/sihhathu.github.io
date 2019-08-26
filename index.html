@@ -57,7 +57,7 @@
             background: grey; 
             border-radius: 20px;
             }
-            @media screen and (max-width: 500px) {
+            @media screen and (max-width: 600px) {
                 .web-banner{
                 width: 70%;
                 height: auto;
@@ -79,8 +79,30 @@
                     width: 100%;
                     rotate: rotate(200deg)
                 }
+                .nav-bar{
+                    position: fixed;
+                    background-color: #fff;
+                    width: 50%;
+                    height: auto;
+                    margin-left: -10px;
+                    margin-top: -10px;
+                    box-shadow: 0px 0px 10px grey;
+                    padding: 10px;
+                    border-radius: 0px 0px 20px 0px;
+                    
+               /* overflow: hidden; */
+           }
+           .nav-bar a{
+                color: #000;
+                text-align: center;
+                padding: 20px;
+                text-decoration: none;
             }
-            @media screen and (min-width: 501px) {
+            #logo{
+                
+            }
+            }
+            @media screen and (min-width: 601px) {
                 .web-banner{
                 width:30%;
                 margin-top: 25%;
@@ -89,6 +111,29 @@
                 float: left;
                 position: sticky;
             }
+            #logo{
+                width: 20%;
+                height: auto;
+            }
+            .nav-bar{
+                position: fixed;
+               width: 100%;
+               height: 30px;
+               margin-left: -10px;
+               margin-top: -10px;
+               box-shadow: 0px 0px 10px grey;
+               padding: 30px;
+               border-radius: 0px 0px 20px 0px;
+               /* overflow: hidden; */
+           }
+           .nav-bar a{
+               position: relative;
+               margin: auto;
+            color: #000;
+                text-align: center;
+                padding: 20px;
+                text-decoration: none;
+           }
             .img{
                 width: 40%;
                 height: auto;
@@ -136,23 +181,28 @@
                 margin-bottom: 20px;
                 border-radius: 5px;
            }
+        
             
         </style>
     </head>
     <body>
-        <!-- <nav>
-            <ul class="nav-bar">
-                <a href="index.html"><li class="w3-bar-item w3-button"><img src="images/logo.svg" alt="Sihathu Logo" width="10%" height="auto"></li></a>
-                <a href="features.html"><li class="w3-bar-item w3-button" >Features</li></a>
-                <a href="team.html"><li class="w3-bar-item w3-button" >FAQ</li></a>
-            </ul> -->
-        </nav>
+        <div class="nav-bar">
+                <!-- <img src="images/logo.svg" alt="Sihathu Logo" id="logo" > -->
+
+                <nav >
+                        <!-- <img src="images/logo.svg" alt="Sihathu Logo" id="logo" > -->
+                        <a href="#sihhathu">Home</a>
+                        <a href="#features">Features</a>
+                        <a href="#faq">FAQ</a>
+                    </nav>
+        </div>
+        
         <title>Sihhathu</title>
         
         <img src="images/splash-screen-horizontal.svg" alt="Main Splash Screen Phone" class="splash-screen">
         <img src="images/logo.svg" alt="Sihhathu App Logo" class="web-banner">
 
-        <div class="features-list">
+        <div class="features-list"  id="sihhathu">
             <h3>What is Sihhathu?</h3>
             <p>Sihhathu is an app dedicated to streamlining the medical services provided to the general public of Maldives. We intend to minimize inconveniences in the process of getting medical care in Maldives by addressing issues ranging from minimal ones such as forgetting to take medication on time to major ones such as the inequality in healthcare services across the various islands of Maldives.
             </p>
@@ -160,7 +210,7 @@
         <div class="line">
             
         </div>
-        <h2 class="features"  >
+        <h2 class="features" id="features" >
                 Features
             </h2>
         <img class="img box-shadow-img" src="images/dashboard.svg" alt="dashboard screen">
@@ -202,6 +252,40 @@
                <p>The ability to consult doctors through telemedicine so that access to healthcare is not limited by geography and patients can be sure that an in-house consultation is necessary before spending money on transportation and accommodation.</p>
                
             </div>
+        <div class="line">
+
+        </div>
+        <div class="features-list" >
+                <h2 class="features" id="faq">FAQ</h2>
+                <h3>
+                        Issues & How the App makes the issues tolerable 
+                </h3>
+                <p> While we have been making great strides in the health sector of Maldives. The Geological Arrangement of the Maldives the highest development is shown only in the capital city of Male’. Which makes the accessibility of good healthcare (i.e. Availability of specialists, Testing Facilities) available only to the citizens living in or near the male region without hefty travel and accommodation funds. </p>
+                <div class="seperator"></div>
+                <p>
+                    Due to this lack of good healthcare service in rural communities people get misdiagnosis which leads to taking an appointment and traveling to the Capital City for treatment only to discover the cause was minor. This leads to wastage of time by the doctor and patients.
+                </p>
+                <div class="seperator"></div>
+                <p>The Telemedicine Feature also allows for doctors to check up on higher priority patients(i.e. patients with progressive diseases.etc)</p>
+                <div class="seperator"></div>
+                <p>Due to the implementation of the Telemedicine feature of the Sihhathu app it gives the opportunity for patients to consult with specialists (via Text, Phone Call or Video Chat) and make an informed decision about traveling to Male’, Thereby saving money on their part and valuable 
+                        time of doctors.
+                </p>
+                <div class="seperator"></div>
+                <p>An electronic record of the patient’s medical history so that patients will not have to carry around or worry about losing physical records. Moreover, doctors would also be able to access these records in order to review the patient’s history and current reports more efficiently.</p>
+                <div class="seperator"></div>
+                <p>The application for appointments for all hospitals via the app provides a one stop platform for patients to schedule their appointments to their preferred doctors or on a preferred date. The tracking of the token numbers reduces the waiting time on queues allowing for the patients to attend to other matters. 
+                    </p>
+                    <div class="seperator"></div>
+                <h3>Plans for future additions to the app</h3>
+                <p>A feature to monitor BPM and do scheduled ECGs. 
+                        A Self Learning AI to Help lower the workload on doctors by creating a filter lowering the number of Useless appointments
+                        A database for medication indicating their side effects, Components and places available 
+                </p>
+
+
+                
+        </div>
 
     </body>
 </html>
