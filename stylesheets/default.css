@@ -72,9 +72,37 @@ h3{
     padding: 20px;
     text-decoration: none;
 }
+.footer{
+    
+    font-size: 3vw;
+    float: right;
+    position: sticky;
+    text-decoration: none;
+    width: 70%;
+    height: auto;
+    margin-right: -10px;
+    margin-top: -10px;
+    box-shadow: 0px 0px 10px grey;
+    border-radius: 20px 0px 0px 0px;
+    text-align: center;
+    /* overflow: hidden; */
+ }
 
 }
 @media screen and (min-width: 601px) {
+    .footer{
+        float: right;
+        position: sticky;
+        text-decoration: none;
+        width: 100%;
+        height: auto;
+        margin-right: -10px;
+        margin-top: -10px;
+        box-shadow: 0px 0px 10px grey;
+        border-radius: 20px 0px 0px 0px;
+        text-align: center;
+        /* overflow: hidden; */
+     }
     .web-banner{
     width:30%;
     margin-top: 25%;
@@ -151,4 +179,13 @@ background-color: #f3f3f3;
     margin-left: auto;
     margin-bottom: 20px;
     border-radius: 5px;
+
 }
+.footer ul{
+    list-style-type: none;
+}
+.footer a{
+    text-decoration: none;
+    color:black;
+}
+
